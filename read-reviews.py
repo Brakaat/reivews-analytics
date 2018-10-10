@@ -16,8 +16,15 @@ print('Total', sum_len, 'words')
 print('Average is', sum_len/len(data), 'words')
 
 #Reviews of less than 100 words 
-new = []
-for select_avg in data:
-    if len(select_avg) < 100:
-        new.append(select_avg)
-print('Total', len(new), 'less than 100 words')
+less = []
+for select in data:
+    if len(select) < 100:
+        less.append(select)
+print('Total', len(less), 'less than 100 words')
+
+good = []
+for select in data:
+    if 'good' in select:
+        good.append(select)
+
+print('Total', len(good), 'have good words')
