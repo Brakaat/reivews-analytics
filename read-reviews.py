@@ -37,3 +37,6 @@ print('Total', len(less), 'less than 100 words')
 # -----------------------------
 good = [select for select in data if 'good' in select]
 print('Total', len(good), 'have good words')
+
+bad = [select for select in data if 'bad' in select]
+print('Total', len(bad), 'have bad words')
